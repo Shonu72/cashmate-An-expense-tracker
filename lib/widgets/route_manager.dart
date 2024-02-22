@@ -20,7 +20,7 @@ class _RouteManagerState extends State<RouteManager> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Spend Smart'),
+        title: const Text('CashMate'),
         centerTitle: true,
         actions: [
           IconButton(
@@ -113,8 +113,14 @@ class ExpensesSearchDelegate extends SearchDelegate {
       ];
 
   @override
-  Widget buildResults(BuildContext context) => Text('Value');
+  Widget buildResults(BuildContext context) => const Padding(
+        padding: EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 20),
+        child: Text('Value'),
+      );
 
   @override
-  Widget buildSuggestions(BuildContext context) => Text('Value');
+  Widget buildSuggestions(BuildContext context) => const Padding(
+        padding: EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 20),
+        child: Text('Value'),
+      );
 }
